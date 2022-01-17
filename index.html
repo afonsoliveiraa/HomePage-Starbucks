@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Starbucks</title>
+  </head>
+  <body>
+
+    <div id="content">
+      <section class="container">
+        <header>
+          <div id="separar">
+            <a><img src="assets/logo.png" class="logo" /></a>
+          </div>
+
+          <ul class="menu">
+            <li>
+              <a href=""><button class="button-selecionado">Home</button></a>
+            </li>
+            <li>
+              <a href=""><button>Sobre</button></a>
+            </li>
+            <li>
+              <a href=""><button>Menu</button></a>
+            </li>
+            <li>
+              <a href=""><button>Contato</button></a>
+            </li>
+          </ul>
+        </header>
+
+        <main>
+          <div class="caixa-texto">
+            <h2>
+              Isso não é apenas café<br />
+              Isso é <span>Starbucks</span>
+            </h2>
+
+            <div id="texto-sobre">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text
+                ever since the 1500s.
+              </p>
+            </div>
+
+            <div id="ver-mais">
+              <a href=""><button id="ver-mais-button">Ver mais</button></a>
+            </div>
+          </div>
+
+          <div id="circulo"></div>
+
+          <div id="slot-imagem">
+            <img src="assets/img1v.png" class="imagem-central" />
+          </div>
+
+          <ul class="produtos">
+            <li>
+              <img
+                src="assets/thumb1.png"
+                onclick="imgSlider('assets/img1v.png')"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/thumb2.png"
+                onclick="imgSlider('assets/img2v.png')"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/thumb3.png"
+                onclick="imgSlider('assets/img3v.png')"
+              />
+            </li>
+          </ul>
+
+          <ul class="social">
+            <li>
+              <a href=""><img src="assets/twitterv2.png" class="face" /></a>
+            </li>
+            <li>
+              <a href=""><img src="assets/instagramv3.png" /></a>
+            </li>
+            <li>
+              <a href=""><img src="assets/github.png" /></a>
+            </li>
+          </ul>
+        </main>
+      </section>
+
+      <script type="text/javascript">
+        function imgSlider(anything) {
+          document.querySelector('.imagem-central').src = anything
+        }
+      </script>
+    </body>
+
+  </div>
+</html>

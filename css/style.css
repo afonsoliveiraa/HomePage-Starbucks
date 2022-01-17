@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: #fffafa;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: min(90vw, 1280px);
+  margin: auto;
+}
+
+header {
+  display: flex;
+  margin-top: 30px;
+}
+
+#separar {
+  width: 70%;
+}
+
+.logo {
+  width: 70px;
+}
+
+.menu {
+  padding-top: 20px;
+}
+
+header ul li {
+  display: inline-block;
+  font-weight: 400px;
+}
+
+.button-selecionado {
+  font-family: 'Poppins', sans-serif;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  border: none;
+  width: 70px;
+  height: 25px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #036635;
+  cursor: pointer;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  border: none;
+  width: 70px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  margin-top: 1%;
+  flex-direction: row;
+}
+
+.caixa-texto {
+  width: 60%;
+  color: #333;
+  margin-top: 110px;
+}
+
+#texto-sobre {
+  width: 80%;
+  line-height: 1.4em;
+  margin-top: 10px;
+}
+
+main .caixa-texto h2 {
+  font-size: 3.5em;
+  color: #333;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+
+main .caixa-texto h2 span {
+  color: #036635;
+  font-size: 1.0em;
+  font-weight: 900;
+}
+
+main .caixa-texto p {
+  text-align: justify;
+}
+
+.imagem-central {
+  max-width: 350px;
+  position: absolute;
+  margin-left: 8%;
+  margin-top: 1%;
+}
+
+#ver-mais {
+  margin-top: 20px;
+  width: 60%;
+}
+
+#ver-mais-button {
+  height: 35px;
+  background-color: #036635;
+  color: white;
+  font-size: 17px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  width: 20%;
+  letter-spacing: 1px;
+}
+
+.produtos {
+  left: 42%;
+  bottom: 20px;
+  position: absolute;
+}
+
+main ul li {
+  display: inline;
+  list-style: none;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+
+.produtos li img {
+  max-width: 60px;
+  -webkit-transition: all 1s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+}
+
+.produtos li img:hover {
+  -webkit-transform: scale(1.25); /* Safari and Chrome */
+  -moz-transform: scale(1.25); /* Firefox */
+  -ms-transform: scale(1.25); /* IE 9 */
+  -o-transform: scale(1.25); /* Opera */
+  transform: scale(1.25);
+}
+
+#circulo {
+  border-radius: 100% 0% 0% 0%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 790px;
+  height: 620px;
+  background-color: #017143;
+}
+
+.social {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  flex-direction: column;
+  max-width: 60px;
+}
+
+.social li {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.social li a {
+  display: inline-block;
+  transform: scale(0.8);
+  margin: 5px 0;
+  filter: invert(1);
+}
