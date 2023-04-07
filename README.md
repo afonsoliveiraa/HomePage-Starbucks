@@ -1,2 +1,2 @@
 # HomePage-Starbucks
-LadingPage Estática
+LadingPage Estática com CSS puro
